@@ -12,7 +12,7 @@ export default new Vuetify({
         primary: 'EF3737',
         // main: 'e1e1e1',
         secondary: 'fafafa',
-        accent: 'FFFFFFF',
+        accent: 'FFFFFF',
         error: colors.red.accent3,
       },
       dark: {
