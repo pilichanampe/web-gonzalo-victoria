@@ -1,26 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      :color="$vuetify.theme.light ? 'secondary' : 'main'"
-      dense
-    >
-      <div class="d-flex align-center">
-        <span>gonzalo</span><span><strong class="primary--text">victoria.</strong></span>
-      </div>
-      <v-spacer></v-spacer>
-      <v-icon class="mr-4">mdi-weather-night</v-icon>
-      <v-switch
-        inset
-        class="mt-5"
-        color="amber"
-        @click="$vuetify.theme.dark = !$vuetify.theme.dark"
-      >
-      </v-switch>
-      <v-icon>mdi-weather-sunny</v-icon>
-
-    </v-app-bar>
-
+    <Navbar />
     <v-main>
       <router-view/>
     </v-main>
@@ -29,13 +9,18 @@
 
 <script>
 import styles from './assets/styles/styles.scss'; //eslint-disable-line
+import Navbar from './components/Navbar.vue';
 
 export default {
   name: 'App',
+  components: {
+    Navbar,
+  },
+  data() {
+    return {
 
-  data: () => ({
-    //
-  }),
+    };
+  },
   mounted() {
     // console.log(styles);
   },
