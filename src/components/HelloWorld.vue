@@ -23,7 +23,8 @@
     <v-img
       v-show="$vuetify.theme.dark"
       src="../assets/img/gv-01.jpg"
-      cover
+      :contain="$vuetify.breakpoint.mdAndUp"
+
       :style="!$vuetify.breakpoint.mdAndDown ? 'left: -340px' : ''"
       max-height="900"
       min-height="500"
@@ -31,7 +32,7 @@
     <v-img
       v-if="!$vuetify.theme.dark"
       src="../assets/img/gv-doodle-01.svg"
-      cover
+      contain
       :style="!$vuetify.breakpoint.mdAndDown ? 'left: -340px' : ''"
       max-height="900"
       min-height="500"
