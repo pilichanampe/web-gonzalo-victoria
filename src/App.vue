@@ -2,39 +2,23 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
-      dark
+      :color="$vuetify.theme.light ? 'secondary' : 'main'"
+      dense
     >
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <span>gonzalo</span><span><strong class="primary--text">victoria.</strong></span>
       </div>
-
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+      <v-icon class="mr-4">mdi-weather-night</v-icon>
+      <v-switch
+        inset
+        class="mt-5"
+        color="amber"
+        @click="$vuetify.theme.dark = !$vuetify.theme.dark"
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      </v-switch>
+      <v-icon>mdi-weather-sunny</v-icon>
+
     </v-app-bar>
 
     <v-main>
@@ -44,6 +28,7 @@
 </template>
 
 <script>
+import styles from './assets/styles/styles.scss'; //eslint-disable-line
 
 export default {
   name: 'App',
@@ -51,5 +36,11 @@ export default {
   data: () => ({
     //
   }),
+  mounted() {
+    // console.log(styles);
+  },
 };
 </script>
+<style lang="scss">
+ @import '~vuetify/src/components/VStepper/_variables.scss';
+</style>

@@ -1,5 +1,7 @@
 <template>
-  <hello-world />
+  <v-container fluid class="ma-0 pa-0">
+    <hello-world />
+  </v-container>
 </template>
 
 <script>

@@ -1,0 +1,14 @@
+THEME LIGHT COLORS
+.prueba {
+  border: 2px solid red;
+}
+// { 
+  $black: #1e1e1e;
+  $red: blue;
+
+// }
+
+:export {
+  red: $red;
+  black: $black;
+}
