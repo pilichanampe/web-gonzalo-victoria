@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex">
     <v-icon class="mr-4">mdi-weather-night</v-icon>
     <v-switch
       inset
@@ -15,7 +15,7 @@
 <script>
 export default {
   name: 'ThemeSwitch',
-}
+};
 </script>
 
 <style>

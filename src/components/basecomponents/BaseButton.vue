@@ -34,7 +34,6 @@ export default {
           text: true,
         };
       }
-      console.log({ ...attrs, ...this.$attrs });
       return { ...attrs, ...this.$attrs };
     },
   },
