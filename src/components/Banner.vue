@@ -2,7 +2,6 @@
   <v-container
     fluid
     class="ma-0 pa-0 pt-15 d-flex flex-column p-relative justify-end"
-    style="height: 94.6vh;"
     :class="$vuetify.theme.dark ? 'black' : ''"
   >
     <div
