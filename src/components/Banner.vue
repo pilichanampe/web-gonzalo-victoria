@@ -30,7 +30,7 @@
         </span>
       </div>
       <div
-        :class="$vuetify.breakpoint.smAndDown ? 'text-center' : 'text-end'"
+        :class="$vuetify.breakpoint.smAndDown ? 'text-center' : 'text-end mb-15'"
         :style="$vuetify.breakpoint.smAndUp ? 'font-size: 2rem;' : 'font-size: 1.4rem;'"
       >Guitarrista, compositor, investigador, docente</div>
     </div>
