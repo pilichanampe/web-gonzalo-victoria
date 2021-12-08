@@ -30,7 +30,4 @@ export default {
  @import '~vuetify/src/components/VStepper/_variables.scss';
  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;700&display=swap');
 
- * {
-   font-family: 'Josefin Sans', sans-serif;
- }
 </style>
