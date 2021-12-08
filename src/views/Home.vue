@@ -1,17 +1,17 @@
 <template>
   <v-container fluid class="ma-0 pa-0">
-    <hello-world />
+    <Banner />
   </v-container>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue';
+import Banner from '../components/Banner.vue';
 
 export default {
   name: 'Home',
 
   components: {
-    HelloWorld,
+    Banner,
   },
 };
 </script>
