@@ -15,8 +15,8 @@
         px-6
       "
       :class="$vuetify.breakpoint.mdAndUp ? 'mb-15' : 'mb-6'"
-        style="z-index: 1;"
-        :style="$vuetify.breakpoint.lgAndUp ? 'font-size: 6rem;' : 'font-size: 3rem;'"
+      style="z-index: 1;"
+      :style="$vuetify.breakpoint.lgAndUp ? 'font-size: 6rem;' : 'font-size: 3rem;'"
     >
       <div
         class="p-width-complete d-flex flex-wrap"

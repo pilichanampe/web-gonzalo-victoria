@@ -12,13 +12,16 @@
       class="text-start text-uppercase"
     >
       <v-list-item-group>
-        <v-list-item to="/">
+        <!-- <v-list-item to="/">
           <v-list-item-title class="d-flex justify-center">
             <div class="d-flex align-center justify-center">
               <span>gonzalo</span><span><strong class="primary--text">victoria.</strong></span>
             </div>
-            <!-- <ThemeSwitch /> -->
+            <ThemeSwitch />
           </v-list-item-title>
+        </v-list-item> -->
+        <v-list-item to="/">
+          <v-list-item-title>{{ $t('home') }}</v-list-item-title>
         </v-list-item>
         <v-list-item to="/about">
           <v-list-item-title>{{ $t('biography') }}</v-list-item-title>
