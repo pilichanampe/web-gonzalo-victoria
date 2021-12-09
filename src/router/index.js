@@ -19,6 +19,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
+    path: '/gallery',
+    name: 'Gallery',
+    component: () => import(/* webpackChunkName: "gallery" */ '../views/Gallery.vue'), //eslint-disable-line
+  },
+  {
     path: '/discography',
     name: 'Discography',
     component: () => import(/* webpackChunkName: "discography" */ '../views/Discography.vue'),

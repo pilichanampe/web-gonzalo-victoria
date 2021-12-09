@@ -6,15 +6,21 @@
     :color="$vuetify.theme.light ? 'secondary' : 'main'"
     dense
   >
-    <div class="d-flex align-center">
-      <span>gonzalo</span><span><strong class="primary--text">victoria.</strong></span>
-    </div>
+    <router-link to="/" class="d-flex align-center text-decoration-none">
+      <span class="white--text">
+        gonzalo
+      </span>
+      <span><strong class="primary--text">
+        victoria.
+      </strong></span>
+    </router-link>
     <v-tabs
       class="ml-15"
       v-show="$vuetify.breakpoint.mdAndUp"
     >
       <v-tab to="/">{{ $t('home')}}</v-tab>
       <v-tab to="/about">{{ $t('biography') }}</v-tab>
+      <v-tab to="/gallery">{{ $t('gallery') }}</v-tab>
       <v-menu
         bottom
         offset-y
