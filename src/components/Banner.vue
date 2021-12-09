@@ -32,7 +32,7 @@
       <div
         :class="$vuetify.breakpoint.smAndDown ? 'text-center' : 'text-end mb-15'"
         :style="$vuetify.breakpoint.smAndUp ? 'font-size: 2rem;' : 'font-size: 1.4rem;'"
-      >Guitarrista, docente, investigador</div>
+      >{{ $t('subtitle')}}</div>
     </div>
     <v-img
       v-show="$vuetify.theme.dark"
