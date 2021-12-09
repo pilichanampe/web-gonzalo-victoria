@@ -13,8 +13,8 @@
       class="ml-15"
       v-show="$vuetify.breakpoint.mdAndUp"
     >
-      <v-tab to="/">Home</v-tab>
-      <v-tab to="/about">About</v-tab>
+      <v-tab to="/">{{ $t('home')}}</v-tab>
+      <v-tab to="/about">{{ $t('biography') }}</v-tab>
       <v-menu
         bottom
         offset-y
@@ -25,7 +25,7 @@
             v-on="on"
             v-bind="attrs"
           >
-            Works
+            {{ $t('works') }}
           </v-tab>
         </template>
         <v-list>
@@ -34,30 +34,30 @@
               <v-list-item-icon>
                 <v-icon>mdi-album</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Discography</v-list-item-title>
+              <v-list-item-title>{{ $t('discography') }}</v-list-item-title>
             </v-list-item>
             <v-list-item to="/sheets">
               <v-list-item-icon>
                 <v-icon>mdi-music-clef-treble</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Sheets</v-list-item-title>
+              <v-list-item-title>{{ $t('sheets') }}</v-list-item-title>
             </v-list-item>
             <v-list-item to="/papers-and-books">
               <v-list-item-icon>
                 <v-icon>mdi-book-open-page-variant-outline</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Papers & books</v-list-item-title>
+              <v-list-item-title>{{ $t('papersAndBooks') }}</v-list-item-title>
             </v-list-item>
           </v-list-item-group>
         </v-list>
       </v-menu>
 
-      <v-tab to="/next-dates">Dates</v-tab>
-      <v-tab to="/contact">Contact</v-tab>
+      <v-tab to="/next-dates">{{ $t('dates') }}</v-tab>
+      <v-tab to="/contact">{{ $t('contact') }}</v-tab>
     </v-tabs>
     <v-spacer></v-spacer>
-    <!-- <v-spacer></v-spacer> -->
-    <ThemeSwitch v-if="!$vuetify.breakpoint.smAndDown" />
+    <LangSwitch  class="mt-6"/>
+    <!-- <ThemeSwitch v-if="!$vuetify.breakpoint.smAndDown" /> -->
     <v-app-bar-nav-icon
       v-show="$vuetify.breakpoint.smAndDown"
       @click.stop="showDrawer = true"
@@ -73,13 +73,15 @@
 
 <script>
 import NavDrawer from './NavDrawer.vue';
-import ThemeSwitch from './ThemeSwitch.vue';
+// import ThemeSwitch from './ThemeSwitch.vue';
+import LangSwitch from './LangSwitch.vue';
 
 export default {
   name: 'Navbar',
   components: {
     NavDrawer,
-    ThemeSwitch,
+    // ThemeSwitch,
+    LangSwitch,
   },
   data() {
     return {
