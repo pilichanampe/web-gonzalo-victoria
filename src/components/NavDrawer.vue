@@ -26,6 +26,9 @@
         <v-list-item to="/about">
           <v-list-item-title>{{ $t('biography') }}</v-list-item-title>
         </v-list-item>
+        <v-list-item to="/gallery">
+          <v-list-item-title>{{ $t('gallery') }}</v-list-item-title>
+        </v-list-item>
         <v-list-group class="text-end">
           <template v-slot:activator>
             <v-list-item-title class="text-start">{{ $t('works') }}</v-list-item-title>
