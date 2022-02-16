@@ -3,7 +3,6 @@
     <h1>about page</h1>
     <BaseButton
       nsecondary
-      color="black red--text"
     >Cancelar</BaseButton>
     <BaseButton nprimary>Guardar</BaseButton>
   </div>
