@@ -12,14 +12,17 @@
       class="text-start text-uppercase"
     >
       <v-list-item-group>
-        <!-- <v-list-item to="/">
+        <v-list-item to="/">
           <v-list-item-title class="d-flex justify-center">
             <div class="d-flex align-center justify-center">
-              <span>gonzalo</span><span><strong class="primary--text">victoria.</strong></span>
+              <span>
+                gonzalo
+              </span>
+              <span><strong class="primary--text">victoria.</strong></span>
             </div>
             <ThemeSwitch />
           </v-list-item-title>
-        </v-list-item> -->
+        </v-list-item>
         <v-list-item to="/">
           <v-list-item-title>{{ $t('home') }}</v-list-item-title>
         </v-list-item>
@@ -68,12 +71,12 @@
 </template>
 
 <script>
-// import ThemeSwitch from './ThemeSwitch.vue';
+import ThemeSwitch from './ThemeSwitch.vue';
 
 export default {
   name: 'NavDrawer',
   components: {
-    // ThemeSwitch,
+    ThemeSwitch,
   },
   props: {
     nshow: {

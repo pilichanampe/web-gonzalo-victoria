@@ -7,7 +7,7 @@
     dense
   >
     <router-link to="/" class="d-flex align-center text-decoration-none">
-      <span class="white--text">
+      <span :class="$vuetify.theme.dark ? 'white--text' : 'black--text'">
         gonzalo
       </span>
       <span><strong class="primary--text">
@@ -62,8 +62,8 @@
       <v-tab to="/contact">{{ $t('contact') }}</v-tab>
     </v-tabs>
     <v-spacer></v-spacer>
-    <LangSwitch  class="mt-6"/>
-    <!-- <ThemeSwitch v-if="!$vuetify.breakpoint.smAndDown" /> -->
+    <LangSwitch  class="mt-6 mr-3"/>
+    <ThemeSwitch v-if="!$vuetify.breakpoint.smAndDown" />
     <v-app-bar-nav-icon
       v-show="$vuetify.breakpoint.smAndDown"
       @click.stop="showDrawer = true"
@@ -79,14 +79,14 @@
 
 <script>
 import NavDrawer from './NavDrawer.vue';
-// import ThemeSwitch from './ThemeSwitch.vue';
+import ThemeSwitch from './ThemeSwitch.vue';
 import LangSwitch from './LangSwitch.vue';
 
 export default {
   name: 'Navbar',
   components: {
     NavDrawer,
-    // ThemeSwitch,
+    ThemeSwitch,
     LangSwitch,
   },
   data() {

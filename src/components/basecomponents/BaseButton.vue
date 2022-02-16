@@ -2,7 +2,8 @@
   <v-btn
     v-on="$listeners"
     v-bind="btnAttrs"
-
+    :color="$attrs.color === undefined ? btnAttrs.color : $attrs.color"
+    :depressed="$attrs.depressed === undefined ? btnAttrs.depressed : $attrs.depressed"
   >
     <slot></slot>
   </v-btn>

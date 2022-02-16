@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
-import colors from 'vuetify/lib/util/colors';
+// import colors from 'vuetify/lib/util/colors';
 // import variables from '../assets/styles/variables.scss';
 
 Vue.use(Vuetify);
@@ -13,7 +13,7 @@ export default new Vuetify({
         // main: 'e1e1e1',
         secondary: 'fafafa',
         accent: 'FFFFFF',
-        error: colors.red.accent3,
+        // error: colors.red.accent3,
       },
       dark: {
         primary: 'EF3737',
